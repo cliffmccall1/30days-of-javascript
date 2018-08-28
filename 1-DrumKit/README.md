@@ -15,9 +15,10 @@ Selecting 1 key
 Multiple selctions
 
 
-ES6 Template strings = ${}
-
-##Overall Thoughts!
+## Overall Thoughts!
 This was a cool exercise. I learned you can add event listeners to corresponding keyboard selections. Using JavaScript to play files and transform buttons with CSS. 
 
 I enjoyed this exercise and look forward to using this knowledge in the future!
+
+## Notes
+ES6 Template strings = ${}
