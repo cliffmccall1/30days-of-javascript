@@ -38,26 +38,12 @@ function scrub(e) {
   video.currentTime = scrubTime;
 }
 // Challenge to make a full screen button
-function toggleFullScreen(elt) {
-  console.log('Requesting fullscreen for');
-  if (elt.requestFullscreen) {
-    elt.requestFullscreen();
-  } else if (elt.msRequestFullscreen) {
-    elt.msRequestFullscreen();
-  } else if (elt.mozRequestFullScreen) {
-    elt.mozRequestFullScreen();
-  } else if (elt.webkitRequestFullscreen) {
-    elt.webkitRequestFullscreen();
-  } else {
-    console.error('Fullscreen not available');
-  }
-}
+
 /* Hook up the event listeners */
 video.addEventListener('click', togglePlay);
 video.addEventListener('play', updateButton);
 video.addEventListener('pause', updateButton);
 video.addEventListener('timeupdate', handleProgress);
-video.addEventListener('click', toggleFullScreen);
 
 toggle.addEventListener('click', togglePlay);
 skipButtons.forEach(button => button.addEventListener('click', skip));
